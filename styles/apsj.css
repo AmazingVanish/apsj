@@ -1,0 +1,22 @@
+/* Add Font */
+
+@font-face {
+    font-family: 'Bookinsanity';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Bookinsanity.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'MrEaves';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/MrEavesSmallCaps.otf) format('otf');
+}
+
+@font-face {
+    font-family: 'Nodesto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/NodestoCapsCondensed.otf) format('otf');
+}
