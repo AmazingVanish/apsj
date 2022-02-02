@@ -1,22 +1,314 @@
-/* Add Font */
+/*
+  D&D Look-alike Fonts
+  Credit: https://github.com/jonathonf/solbera-dnd-fonts
+*/
 
 @font-face {
-    font-family: 'Bookinsanity';
+    font-family: BookInsanity;
+    src: url('../fonts/Bookinsanity/Bookinsanity.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/Bookinsanity.otf) format('otf');
 }
 
 @font-face {
-    font-family: 'MrEaves';
+    font-family: BookInsanity;
+    src: url('../fonts/Bookinsanity/Bookinsanity%20Bold.otf') format('opentype');
+    font-weight: bold;
     font-style: normal;
-    font-weight: 400;
-    src: url(../fonts/MrEavesSmallCaps.otf) format('otf');
 }
 
 @font-face {
+    font-family: BookInsanity;
+    src: url('../fonts/Bookinsanity/Bookinsanity%20Italic.otf')
+        format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: BookInsanity;
+    src: url('../fonts/Bookinsanity/Bookinsanity%20Bold%20Italic.otf')
+        format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: MrEaves;
+    src: url('../fonts/MrEaves/Mr%20Eaves%20Small%20Caps.otf')
+        format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Nodesto;
+    src: url('../fonts/Nodesto/Nodesto%20Caps%20Condensed.otf')
+        format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Nodesto;
+    src: url('../fonts/Nodesto/Nodesto%20Caps%20Condensed%20Bold.otf')
+        format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Nodesto;
+    src: url('../fonts/Nodesto/Nodesto%20Caps%20Condensed%20Italic.otf')
+        format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Nodesto;
+    src: url('../fonts/Nodesto/Nodesto%20Caps%20Condensed%20Bold%20Italic.otf')
+        format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ScalySanCaps;
+    src: url('../fonts/Scalysans/Scaly%20Sans%20Caps.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ScalySansCaps;
+    src: url('../fonts/Scalysans/Scaly%20Sans%20Caps%20Bold.otf')
+        format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: ScalySansCaps;
+    src: url('../fonts/Scalysans/Scaly%20Sans%20Caps%20Italic.otf')
+        format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: ScalySansCaps;
+    src: url('../fonts/Scalysans/Scaly%20Sans%20Caps%20Bold%20Italic.otf')
+        format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Changes */
+
+.editor-content table tbody tr td {
+    padding: 0 15px;
+}
+
+.editor-content table tbody tr td:first-child {
+    white-space: nowrap;
+}
+
+.editor-content blockquote {
+    margin-bottom: 1.5em;
+}
+
+.editor-content h1,
+.editor-content h2,
+.editor-content h3,
+.editor-content h4,
+.editor-content h5,
+.editor-content h6,
+.mce-content-body h1,
+.mce-content-body h2,
+.mce-content-body h3,
+.mce-content-body h4,
+.mce-content-body h5,
+.mce-content-body h6 {
     font-family: 'Nodesto';
-    font-style: normal;
     font-weight: 400;
-    src: url(../fonts/NodestoCapsCondensed.otf) format('otf');
+}
+
+.editor-content h1 {
+    font-size: 3em;
+}
+
+.editor-content h2 {
+    font-size: 2.75em;
+}
+
+.editor-content h3 {
+    font-size: 2.5em;
+}
+
+.editor-content h4 {
+    font-size: 2.25em;
+}
+
+.editor-content h5 {
+    font-size: 2em;
+}
+
+.editor-content h6 {
+    font-size: 1.75em;
+}
+
+.monks-journal-sheet.sheet .sheet-navigation .item {
+    font-size: 1.5em;
+}
+
+.editor-content {
+    padding-right: 5px;
+    overflow-x: hidden;
+}
+
+li > .entity-link {
+    line-height: 1.75em;
+}
+
+/* Stylish Panels */
+
+.panel {
+    position: relative;
+    width: 80%;
+    top: 1em;
+    left: 10%;
+    margin: 0;
+    margin-bottom: 0.5em;
+    padding: 6px 8px;
+    line-height: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px var(--color-shadow-dark);
+    color: var(--color-text-light-highlight);
+    list-style: none;
+}
+
+.panel::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 8px;
+    float: left;
+}
+
+.panel p {
+    margin: 0;
+    font-family: 'ScalySansCaps';
+    font-weight: 400;
+    text-shadow: 1px 1px #000000;
+}
+
+.panel.info {
+    background: rgba(47, 80, 132, 0.6);
+    border: 1px solid #5c87b9;
+}
+
+.panel.info::before {
+    content: '\f05a';
+}
+
+.panel.note {
+    background: rgba(214, 150, 0, 0.6);
+    border: 1px solid #d69e07;
+}
+
+.panel.note::before {
+    content: '\f044';
+}
+
+.panel.warning {
+    background: rgba(105, 0, 8, 0.6);
+    border: 1px solid #750003;
+}
+
+.panel.warning::before {
+    content: '\f06a';
+}
+
+.panel.bonus {
+    background: rgba(101, 155, 0, 0.6);
+    border: 1px solid #8ad304;
+}
+
+.panel.bonus::before {
+    content: '\f559';
+}
+
+/* Stylish Blocks */
+
+.block {
+    margin: 0 5%;
+    padding: 1em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.block-contents {
+    display: flex;
+    flex: 1;
+    gap: 1em;
+}
+
+.block-contents > main {
+    flex: 4;
+}
+
+.block-contents > aside {
+    flex: 2;
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(#808080, #c0c0c0);
+    border-radius: 0.5em;
+}
+
+.block h1,
+.block h2,
+.block h3,
+.block h4,
+.block h5,
+.block h6 {
+    font-family: 'ScalySansCaps';
+    font-weight: 400;
+    text-shadow: 1px 1px #666666;
+}
+
+.block h1 {
+    font-size: 2em;
+}
+
+.block h2 {
+    font-size: 1.75em;
+}
+
+.block h3 {
+    font-size: 1.5em;
+}
+
+.block h4 {
+    font-size: 1.25em;
+}
+
+.block h5 {
+    font-size: 1em;
+}
+
+.block h6 {
+    font-size: 0.75em;
+}
+
+.block.encounter {
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+    background: linear-gradient(#c0c0c0, #808080);
+}
+
+.block.read-aloud {
+    border-top: 2px solid #552900;
+    border-bottom: 2px solid #552900;
+    background: url('../images/aged-paper.jpg');
 }
