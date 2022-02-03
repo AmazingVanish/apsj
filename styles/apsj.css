@@ -4,101 +4,93 @@
 */
 
 @font-face {
-    font-family: BookInsanity;
+    font-family: 'BookInsanity';
     src: url('../fonts/Bookinsanity/Bookinsanity.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: BookInsanity;
-    src: url('../fonts/Bookinsanity/Bookinsanity%20Bold.otf') format('opentype');
+    font-family: 'BookInsanity';
+    src: url('../fonts/Bookinsanity/BookinsanityBold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: BookInsanity;
-    src: url('../fonts/Bookinsanity/Bookinsanity%20Italic.otf')
-        format('opentype');
+    font-family: 'BookInsanity';
+    src: url('../fonts/Bookinsanity/BookinsanityItalic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: BookInsanity;
-    src: url('../fonts/Bookinsanity/Bookinsanity%20Bold%20Italic.otf')
-        format('opentype');
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: MrEaves;
-    src: url('../fonts/MrEaves/Mr%20Eaves%20Small%20Caps.otf')
-        format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Nodesto;
-    src: url('../fonts/Nodesto/Nodesto%20Caps%20Condensed.otf')
-        format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Nodesto;
-    src: url('../fonts/Nodesto/Nodesto%20Caps%20Condensed%20Bold.otf')
-        format('opentype');
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: Nodesto;
-    src: url('../fonts/Nodesto/Nodesto%20Caps%20Condensed%20Italic.otf')
-        format('opentype');
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: Nodesto;
-    src: url('../fonts/Nodesto/Nodesto%20Caps%20Condensed%20Bold%20Italic.otf')
+    font-family: 'BookInsanity';
+    src: url('../fonts/Bookinsanity/BookinsanityBoldItalic.otf')
         format('opentype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
-    font-family: ScalySanCaps;
-    src: url('../fonts/Scalysans/Scaly%20Sans%20Caps.otf') format('opentype');
+    font-family: 'MrEaves';
+    src: url('../fonts/MrEaves/MrEaves.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: ScalySansCaps;
-    src: url('../fonts/Scalysans/Scaly%20Sans%20Caps%20Bold.otf')
-        format('opentype');
+    font-family: 'ScalySans';
+    src: url('../fonts/Scalysans/ScalySans.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ScalySans';
+    src: url('../fonts/Scalysans/ScalySansBold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: ScalySansCaps;
-    src: url('../fonts/Scalysans/Scaly%20Sans%20Caps%20Italic.otf')
-        format('opentype');
+    font-family: 'ScalySans';
+    src: url('../fonts/Scalysans/ScalySansItalic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
-    font-family: ScalySansCaps;
-    src: url('../fonts/Scalysans/Scaly%20Sans%20Caps%20Bold%20Italic.otf')
+    font-family: 'ScalySans';
+    src: url('../fonts/Scalysans/ScalySansBoldItalic.otf') format('opentype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ScalySansCaps';
+    src: url('../fonts/Scalysans/ScalySansCaps.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ScalySansCaps';
+    src: url('../fonts/Scalysans/ScalySansCapsBold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ScalySansCaps';
+    src: url('../fonts/Scalysans/ScalySansCapsItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ScalySansCaps';
+    src: url('../fonts/Scalysans/ScalySansCapsBoldItalic.otf')
         format('opentype');
     font-weight: bold;
     font-style: italic;
@@ -118,60 +110,71 @@
     margin-bottom: 1.5em;
 }
 
-.editor-content h1,
-.editor-content h2,
-.editor-content h3,
-.editor-content h4,
-.editor-content h5,
-.editor-content h6,
-.mce-content-body h1,
-.mce-content-body h2,
-.mce-content-body h3,
-.mce-content-body h4,
-.mce-content-body h5,
-.mce-content-body h6 {
-    font-family: 'Nodesto';
-    font-weight: 400;
-}
-
-.editor-content h1 {
-    font-size: 3em;
-}
-
-.editor-content h2 {
-    font-size: 2.75em;
-}
-
-.editor-content h3 {
-    font-size: 2.5em;
-}
-
-.editor-content h4 {
-    font-size: 2.25em;
-}
-
-.editor-content h5 {
-    font-size: 2em;
-}
-
-.editor-content h6 {
-    font-size: 1.75em;
-}
-
-.monks-journal-sheet.sheet .sheet-navigation .item {
-    font-size: 1.5em;
-}
-
 .editor-content {
     padding-right: 5px;
     overflow-x: hidden;
+}
+
+.editor-content h1 {
+    font-size: xxx-large;
+}
+
+.editor-content h2 {
+    font-size: xx-large;
+}
+
+.editor-content h3 {
+    font-size: x-large;
+}
+
+.editor-content h4 {
+    font-size: large;
+}
+
+.editor-content h5 {
+    font-size: medium;
+}
+
+.editor-content h6 {
+    font-size: small;
 }
 
 li > .entity-link {
     line-height: 1.75em;
 }
 
-/* Stylish Panels */
+/*
+  Stylish Styles
+  */
+
+.dnd-title {
+    font-family: 'Modesto';
+    font-weight: 700;
+}
+
+.adv-title {
+    font-family: 'Dungeon';
+    font-weight: 700;
+}
+
+.dnd-heading {
+    font-family: 'MrEaves';
+    font-weight: 700;
+}
+
+.dnd-data {
+    font-family: 'ScalySans';
+    font-weight: 700;
+}
+
+.dnd-text {
+    font-family: 'Bookinsanity';
+    font-weight: 400;
+}
+
+/*
+  Stylish Templates: Panels
+ */
 
 .panel {
     position: relative;
@@ -195,7 +198,7 @@ li > .entity-link {
     float: left;
 }
 
-.panel p {
+.panel header {
     margin: 0;
     font-family: 'ScalySansCaps';
     font-weight: 400;
@@ -238,7 +241,9 @@ li > .entity-link {
     content: '\f559';
 }
 
-/* Stylish Blocks */
+/*
+  Stylish Templates: Blocks
+ */
 
 .block {
     margin: 0 5%;
@@ -260,10 +265,6 @@ li > .entity-link {
 
 .block-contents > aside {
     flex: 2;
-    margin: 0;
-    padding: 10px;
-    background: linear-gradient(#808080, #c0c0c0);
-    border-radius: 0.5em;
 }
 
 .block h1,
@@ -304,11 +305,23 @@ li > .entity-link {
 .block.encounter {
     border-top: 2px solid #800000;
     border-bottom: 2px solid #800000;
-    background: linear-gradient(#c0c0c0, #808080);
+    background: url('../images/bloody-light-parchment.jpg');
+}
+
+.light-overlay {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(
+        rgba(256, 256, 255, 0.75),
+        rgba(64, 64, 64, 0.75)
+    );
+    border: 2px solid #800000;
+    border-radius: 0.5em;
+    box-shadow: 0 0 3px var(--color-shadow-dark);
 }
 
 .block.read-aloud {
     border-top: 2px solid #552900;
     border-bottom: 2px solid #552900;
-    background: url('../images/aged-paper.jpg');
+    background: url('../images/light-parchment.jpg');
 }

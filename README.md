@@ -8,7 +8,9 @@ Right now this just enables Checklists and Image Editing while providing 3 D&D L
 
 In the setup screen, use the URL `https://github.com/AmazingVanish/apsj/releases/latest/download/module.json` to install the module.
 
-## Usage
+## Media
+
+![screenshot](images/StylishJournalEntry.png)
 
 ## License
 

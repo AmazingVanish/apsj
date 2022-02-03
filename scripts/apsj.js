@@ -9,31 +9,32 @@ Hooks.on('ready', () => {
     CONFIG.TinyMCE.visualblocks_default_state = true;
 
     CONFIG.TinyMCE.style_formats.push({
-        title: 'Stylish Panels',
+        title: 'Stylish Text',
         items: [
             {
-                title: 'Info Panel',
-                block: 'section',
-                classes: 'panel info',
-                wrapper: true,
+                title: 'D&D Title',
+                selector: 'h1,h2,h3,h4,h5,h6,th',
+                classes: 'dnd-title',
             },
             {
-                title: 'Note Panel',
-                block: 'section',
-                classes: 'panel note',
-                wrapper: true,
+                title: 'Adventure Title',
+                selector: 'h1,h2,h3,h4,h5,h6,th',
+                classes: 'adv-title',
             },
             {
-                title: 'Warning Panel',
-                block: 'section',
-                classes: 'panel warning',
-                wrapper: true,
+                title: 'D&D Heading',
+                selector: 'h1,h2,h3,h4,h5,h6,th',
+                classes: 'dnd-heading',
             },
             {
-                title: 'Bonus Panel',
-                block: 'section',
-                classes: 'panel bonus',
-                wrapper: true,
+                title: 'D&D Data / DM',
+                selector: 'h1,h2,h3,h4,h5,h6,th',
+                classes: 'dnd-data',
+            },
+            {
+                title: 'D&D Text',
+                selector: 'p,td',
+                classes: 'dnd-text',
             },
         ],
     });
@@ -41,17 +42,41 @@ Hooks.on('ready', () => {
     CONFIG.TinyMCE.templates = CONFIG.TinyMCE.templates ?? [];
     CONFIG.TinyMCE.templates.push(
         {
-            title: 'Encounter Block',
+            title: 'Panel: Information',
+            description: 'A stylish panel to provide an informational message.',
+            content:
+                '<section class="panel info"><header><b>Information Heading</b></header><main><p>The body of the Informational Message.</p></main></section>',
+        },
+        {
+            title: 'Panel: Note',
+            description: 'A stylish panel to provide a note.',
+            content:
+                '<section class="panel note"><header><b>Note Heading</b></header><main><p>The body of the Note.</p></main></section>',
+        },
+        {
+            title: 'Panel: Warning',
+            description: 'A stylish panel to provide a warning message.',
+            content:
+                '<section class="panel warning"><header><b>Warning Heading</b></header><main><p>The body of the Warning Message.</p></main></section>',
+        },
+        {
+            title: 'Panel: Bonus',
+            description: 'A stylish panel to provide an Bonus message.',
+            content:
+                '<section class="panel bonus"><header><b>Bonus Heading</b></header><main><p>The body of the Bonus Message.</p></main></section>',
+        },
+        {
+            title: 'Block: Encounter',
             description:
                 'A stylish block for putting encounter data and descrptions.',
             content:
-                '<section class="block encounter"><header><h1>Encounter!</h1></header><div class="block-contents"><main><h2>Description</h2></main><aside><h2>Adversaries</h2></aside></section>',
+                '<section class="block encounter"><header><h1>Encounter!</h1></header><div class="block-contents"><main><h2>Description</h2><p>Enter a detailed description of the environment and scenario here to read to the players.</p><p>Drag Actor tokens from your compendium into the Adversaries list on the right for easy setup of the encounter.</p></main><aside class="light-overlay"><h2>Adversaries</h2><p></p></aside></section>',
         },
         {
-            title: 'Read Aloud Block',
+            title: 'Block: Read Aloud',
             description:
                 'A stylish block to denote flavor text to be read aloud to the players.',
-            content: `<section class="block read-aloud"><main class="block-contents"><h1>Read Aloud</h1><p></p></main></section>`,
+            content: `<section class="block read-aloud"><main><h1>Read Aloud</h1><p>Flavor text to read aloud to the players.</p></main></section>`,
         }
     );
 
