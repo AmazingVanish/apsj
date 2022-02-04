@@ -267,54 +267,37 @@ li > .entity-link {
     flex: 2;
 }
 
-.block h1,
+.block h1 {
+    font-family: 'Modesto';
+    font-weight: 700;
+    text-shadow: 1px 1px #666666;
+}
+
 .block h2,
 .block h3,
 .block h4,
 .block h5,
 .block h6 {
-    font-family: 'ScalySansCaps';
-    font-weight: 400;
+    font-family: 'MrEaves';
+    font-weight: 700;
     text-shadow: 1px 1px #666666;
 }
 
-.block h1 {
-    font-size: 2em;
-}
-
-.block h2 {
-    font-size: 1.75em;
-}
-
-.block h3 {
-    font-size: 1.5em;
-}
-
-.block h4 {
-    font-size: 1.25em;
-}
-
-.block h5 {
-    font-size: 1em;
-}
-
-.block h6 {
-    font-size: 0.75em;
+.block p {
+    font-family: 'Bookinsanity';
+    font-weight: 400;
 }
 
 .block.encounter {
     border-top: 2px solid #800000;
     border-bottom: 2px solid #800000;
-    background: url('../images/bloody-light-parchment.jpg');
+    background: url('../images/bloody-light-parchment.webp');
 }
 
-.light-overlay {
+.red-overlay {
     margin: 0;
     padding: 10px;
-    background: linear-gradient(
-        rgba(256, 256, 255, 0.75),
-        rgba(64, 64, 64, 0.75)
-    );
+    background: linear-gradient(rgba(255, 0, 0, 0.75), rgba(124, 0, 0, 0.75));
     border: 2px solid #800000;
     border-radius: 0.5em;
     box-shadow: 0 0 3px var(--color-shadow-dark);
@@ -323,5 +306,43 @@ li > .entity-link {
 .block.read-aloud {
     border-top: 2px solid #552900;
     border-bottom: 2px solid #552900;
-    background: url('../images/light-parchment.jpg');
+    background: url('../images/light-parchment.webp');
+}
+
+.block.magic-item {
+    color: #ffffff;
+    border-top: 2px solid #5c87b9;
+    border-bottom: 2px solid #5c87b9;
+    background: url('../images/magic-bg.webp');
+}
+
+.block.magic-item h1,
+.block.magic-item h2,
+.block.magic-item h3,
+.block.magic-item h4,
+.block.magic-item h5,
+.block.magic-item h6,
+.block.magic-item hr {
+    border-bottom: 2px solid #5c87b9;
+}
+
+.blue-overlay {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(rgba(6, 68, 180, 0.75), rgba(0, 40, 103, 0.75));
+    border: 2px solid #5c87b9;
+    border-radius: 0.5em;
+    box-shadow: 0 0 3px var(--color-shadow-dark);
+}
+
+.light-overlay {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.75),
+        rgba(64, 64, 64, 0.75)
+    );
+    border: 2px solid #800000;
+    border-radius: 0.5em;
+    box-shadow: 0 0 3px var(--color-shadow-dark);
 }
