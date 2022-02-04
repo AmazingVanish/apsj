@@ -10,7 +10,7 @@ In the setup screen, use the URL `https://github.com/AmazingVanish/apsj/releases
 
 ## Media
 
-![screenshot](images/StylishJournalEntry.png)
+![screenshot](images/StylishJournalEntry.webp)
 
 ## License
 
