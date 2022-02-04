@@ -41,56 +41,56 @@
 
 @font-face {
     font-family: 'ScalySans';
-    src: url('../fonts/Scalysans/ScalySans.otf') format('opentype');
+    src: url('../fonts/ScalySans/ScalySans.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ScalySans';
-    src: url('../fonts/Scalysans/ScalySansBold.otf') format('opentype');
+    src: url('../fonts/ScalySans/ScalySansBold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ScalySans';
-    src: url('../fonts/Scalysans/ScalySansItalic.otf') format('opentype');
+    src: url('../fonts/ScalySans/ScalySansItalic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ScalySans';
-    src: url('../fonts/Scalysans/ScalySansBoldItalic.otf') format('opentype');
+    src: url('../fonts/ScalySans/ScalySansBoldItalic.otf') format('opentype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ScalySansCaps';
-    src: url('../fonts/Scalysans/ScalySansCaps.otf') format('opentype');
+    src: url('../fonts/ScalySans/ScalySansCaps.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ScalySansCaps';
-    src: url('../fonts/Scalysans/ScalySansCapsBold.otf') format('opentype');
+    src: url('../fonts/ScalySans/ScalySansCapsBold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ScalySansCaps';
-    src: url('../fonts/Scalysans/ScalySansCapsItalic.otf') format('opentype');
+    src: url('../fonts/ScalySans/ScalySansCapsItalic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ScalySansCaps';
-    src: url('../fonts/Scalysans/ScalySansCapsBoldItalic.otf')
+    src: url('../fonts/ScalySans/ScalySansCapsBoldItalic.otf')
         format('opentype');
     font-weight: bold;
     font-style: italic;

@@ -2,7 +2,7 @@
 
 ![Version](https://img.shields.io/github/v/tag/AmazingVanish/apsj?label=Version&style=flat-square&color=2577a1) ![Latest Release Download Count](https://img.shields.io/github/downloads/AmazingVanish/apsj/latest/module.zip?label=Downloads&style=flat-square&color=9b43a8) ![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://raw.githubusercontent.com/arcanistzed/wst/main/module.json&style=flat-square&color=ff6400) [![Discord Server](https://img.shields.io/badge/-Discord-%232c2f33?style=flat-square&logo=discord)](https://discord.gg/ge9GJXDsM2)
 
-## Arius Planeswalker presents Stylish Journal!
+## Arius Planeswalker Presents Stylish Journal
 
 Need to draw attention to important information in your journals? Panels have you covered, from informative to notes to warnings and bonuses.
 Like the D&D style text? Fake it till you make it with D&D Text Styles you can apply to Headings and body text.
@@ -18,7 +18,7 @@ In the setup screen, use the URL `https://github.com/AmazingVanish/apsj/releases
 
 ## Media
 
-![screenshot](images/StylishJournalEntry.webp)
+![screenshot](https://raw.githubusercontent.com/AmazingVanish/apsj/main/images/StylishJournalEntry.webp)
 
 ## License
 

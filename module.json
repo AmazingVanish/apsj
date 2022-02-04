@@ -1,7 +1,7 @@
 {
     "name": "apsj",
     "title": "Arius Planeswalker's Stylish Journal",
-    "description": "Beautiful and functional Styles for your Foundry VTT journal entries.",
+    "description": "Need to draw attention to important information in your journals? Panels have you covered, from informative to notes to warnings and bonuses. Like the D&D style text? Fake it till you make it with D&D Text Styles you can apply to Headings and body text. No more boring encounter pages. Liven it up with the Encounter Block, complete with Adversary listing! Add some panache to your Magic Item listings and pull out the important stats and item links to a quickly accessible aside. Have a description to read aloud and need a way to differentiate it on the page? Read Aloud Block to the rescue! Stop looking at those boring old pale pages. Add some vibrance and style to your journal entries today!",
     "version": "This is auto replaced",
     "library": "false",
     "manifestPlusVersion": "1.2.0",
@@ -37,12 +37,12 @@
     "media": [
         {
             "type": "screenshot",
-            "url": "https://github.com/AmazingVanish/apsj/tree/main/images/StylishJournalEntry.webp",
+            "url": "https://raw.githubusercontent.com/AmazingVanish/apsj/main/images/StylishJournalEntry.webp",
             "caption": "Stylish Journal Entry"
         },
         {
             "type": "cover",
-            "url": "https://github.com/AmazingVanish/apsj/tree/main/images/cover.webp",
+            "url": "https://raw.githubusercontent.com/AmazingVanish/apsj/main/images/cover.webp",
             "caption": "Arius Planeswalker's Stylish Journal"
         }
     ],
