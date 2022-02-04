@@ -2,31 +2,55 @@
     "name": "apsj",
     "title": "Arius Planeswalker's Stylish Journal",
     "description": "Beautiful and functional Styles for your Foundry VTT journal entries.",
-    "author": "Vanish",
+    "version": "This is auto replaced",
+    "library": "false",
+    "manifestPlusVersion": "1.2.0",
+    "minimumCoreVersion": "9",
+    "compatibleCoreVersion": 9,
+    "author": "Amaing Vanish",
     "authors": [
         {
-            "name": "Chris 'Vanish' Van Cleve",
+            "name": "Amazing Vanish",
             "url": "https://dscape-llc.com/",
             "email": "chris.vancleve@dscape-llc.com",
             "discord": "vanish#4369",
             "reddit": "u/AmazingVanish"
         }
     ],
+    "dependencies": [],
+    "deprecated": {},
+    "conflicts": [],
+    "esmodules": ["scripts/apsj.js"],
+    "scripts": [],
+    "styles": ["styles/apsj.css"],
+    "includes": ["images", "fonts"],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "languages/en.json"
+        }
+    ],
     "url": "This is auto replaced",
-    "license": "https://github.com/AmazingVanish/apsj/blob/main/LICENSE",
-    "readme": "https://github.com/AmazingVanish/apsj/blob/main/README.md",
-    "bugs": "https://github.com/AmazingVanish/apsj/issues/new/choose",
-    "changelog": "https://github.com/AmazingVanish/apsj/blob/main/CHANGELOG.md",
+    "manifest": "This is auto replaced",
+    "download": "This is auto replaced",
+    "media": [
+        {
+            "type": "screenshot",
+            "url": "https://github.com/AmazingVanish/apsj/tree/main/images/StylishJournalEntry.webp",
+            "caption": "Stylish Journal Entry"
+        },
+        {
+            "type": "cover",
+            "url": "https://github.com/AmazingVanish/apsj/tree/main/images/cover.webp",
+            "caption": "Arius Planeswalker's Stylish Journal"
+        }
+    ],
     "flags": {
         "allowBugReporter": true
     },
-    "version": "This is auto replaced",
-    "minimumCoreVersion": "9",
-    "compatibleCoreVersion": 9,
-    "esmodules": ["scripts/apsj.js"],
-    "styles": ["styles/apsj.css"],
-    "manifest": "This is auto replaced",
-    "download": "This is auto replaced",
-    "manifestPlusVersion": "1.2.0",
-    "media": []
+    "license": "https://github.com/AmazingVanish/apsj/blob/main/LICENSE",
+    "readme": "https://github.com/AmazingVanish/apsj/blob/main/README.md",
+    "bugs": "https://github.com/AmazingVanish/apsj/issues/new/choose",
+    "changelog": "https://github.com/AmazingVanish/apsj/blob/main/CHANGELOG.md"
 }
