@@ -1,3 +1,3 @@
 # Changelog
 
-## 0.1.0 - 31 Jan 2022 - Initial Release
+## 0.9.5 - 04 Feb 2022 - Initial Public Release

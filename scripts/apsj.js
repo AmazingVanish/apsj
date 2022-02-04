@@ -70,13 +70,13 @@ Hooks.on('ready', () => {
             description:
                 'A stylish block for displaying encounter data and descrptions.',
             content:
-                '<section class="block encounter"><header><h1>Encounter!</h1></header><div class="block-contents"><main><h2>Description</h2><p>Enter a detailed description of the environment and scenario here to read to the players.</p><p>Drag Actor tokens from your compendium into the Adversaries list on the right for easy setup of the encounter.</p></main><aside class="red-overlay"><h2>Adversaries</h2><p></p></aside></section>',
+                '<section class="block encounter"><header><h1>Encounter!</h1></header><div class="block-contents"><main><h2>Description</h2><p>Enter a detailed description of the environment and scenario here to read to the players.</p><p>Drag Actor tokens from your compendium into the Adversaries list on the right for easy setup of the encounter.</p></main><aside class="red-overlay"><h2>Adversaries</h2><p style="color: #000000; font-family: Scalysans;"></p></aside></section>',
         },
         {
             title: 'Block: Magic Item',
             description:
                 "A stylish block to display a magic item's description and stats.",
-            content: `<section class="block magic-item"><header><h1>Magic Item Name</h1></header><div class="block-contents"><main><h2>Description</h2><p>Description of the item and its abilities.</p><p>Place Stats in the aside to the right, and a link to the item below the divider.</p></main><aside class="blue-overlay"><h2>Stats</h2><p></p><hr><p style="color: #000000"></p></aside></section>`,
+            content: `<section class="block magic-item"><header><h1>Magic Item Name</h1></header><div class="block-contents"><main><h2>Description</h2><p>Description of the item and its abilities.</p><p>Place Stats in the aside to the right, and a link to the item below the divider.</p></main><aside class="blue-overlay"><h2>Stats</h2><p></p><hr><p style="color: #000000; font-family: Scalysans;"></p></aside></section>`,
         },
         {
             title: 'Block: Read Aloud',
