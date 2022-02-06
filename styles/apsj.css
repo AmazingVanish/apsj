@@ -302,9 +302,11 @@ li > .entity-link {
 
 .block.magic-item {
     color: #ffffff;
-    border-top: 2px solid #5c87b9;
-    border-bottom: 2px solid #5c87b9;
-    background: url('../assets/magic-bg.webp');
+    border: 2px solid #5c87b9;
+    border-radius: 0.5em;
+    background: url('../assets/magic-stars.webp') no-repeat center;
+    background-size: cover;
+    box-shadow: 0 0 3px var(--color-shadow-dark);
 }
 
 .block.magic-item h1,
