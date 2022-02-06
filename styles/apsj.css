@@ -5,28 +5,28 @@
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/Bookinsanity/Bookinsanity.otf') format('opentype');
+    src: url('../fonts/BookInsanity/BookInsanity.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/Bookinsanity/BookinsanityBold.otf') format('opentype');
+    src: url('../fonts/BookInsanity/BookInsanityBold.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/Bookinsanity/BookinsanityItalic.otf') format('opentype');
+    src: url('../fonts/BookInsanity/BookInsanityItalic.otf') format('opentype');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/Bookinsanity/BookinsanityBoldItalic.otf')
+    src: url('../fonts/BookInsanity/BookInsanityBoldItalic.otf')
         format('opentype');
     font-weight: bold;
     font-style: italic;
@@ -97,6 +97,10 @@
 }
 
 /* Changes */
+
+.editable {
+    background-image: url(../assets/parchment.webp);
+}
 
 .editor-content table tbody tr td {
     padding: 0 15px;
@@ -289,31 +293,18 @@ li > .entity-link {
 }
 
 .block.encounter {
-    border-top: 2px solid #800000;
-    border-bottom: 2px solid #800000;
-    background: url('../images/bloody-light-parchment.webp');
-}
-
-.red-overlay {
-    margin: 0;
-    padding: 10px;
-    background: linear-gradient(rgba(255, 0, 0, 0.75), rgba(124, 0, 0, 0.75));
     border: 2px solid #800000;
     border-radius: 0.5em;
+    background: url('../assets/parchment-bloody.webp');
+    background-size: cover;
     box-shadow: 0 0 3px var(--color-shadow-dark);
-}
-
-.block.read-aloud {
-    border-top: 2px solid #552900;
-    border-bottom: 2px solid #552900;
-    background: url('../images/light-parchment.webp');
 }
 
 .block.magic-item {
     color: #ffffff;
     border-top: 2px solid #5c87b9;
     border-bottom: 2px solid #5c87b9;
-    background: url('../images/magic-bg.webp');
+    background: url('../assets/magic-bg.webp');
 }
 
 .block.magic-item h1,
@@ -324,6 +315,30 @@ li > .entity-link {
 .block.magic-item h6,
 .block.magic-item hr {
     border-bottom: 2px solid #5c87b9;
+}
+
+.block.read-aloud {
+    border: 2px solid #800000;
+    border-radius: 0.5em;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.75),
+        rgba(64, 64, 64, 0.25)
+    );
+    box-shadow: 0 0 3px var(--color-shadow-dark);
+}
+
+.icon {
+    float: left;
+    margin: 0 8px 0 -30px;
+}
+
+.icon::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: xxx-large;
+    color: #800000;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    content: '\f4ad';
 }
 
 .blue-overlay {
@@ -345,4 +360,28 @@ li > .entity-link {
     border: 2px solid #800000;
     border-radius: 0.5em;
     box-shadow: 0 0 3px var(--color-shadow-dark);
+}
+
+.red-overlay {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(rgba(255, 0, 0, 0.75), rgba(124, 0, 0, 0.75));
+    border: 2px solid #800000;
+    border-radius: 0.5em;
+    box-shadow: 0 0 3px var(--color-shadow-dark);
+}
+
+/*
+  Table Styles
+*/
+
+table thead {
+    background-color: #800000 !important;
+    font-family: 'ScalySansCaps';
+    font-weight: 700;
+}
+
+td {
+    font-family: 'ScalySans';
+    font-weight: 400;
 }

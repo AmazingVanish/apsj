@@ -1,13 +1,14 @@
+Hooks.on('init', () => {
+    CONFIG.TinyMCE.plugins =
+        ' advlist lists searchreplace textpattern template image table hr code save link';
+
+    CONFIG.TinyMCE.toolbar =
+        'styleselect fontselect fontsizeselect forecolor backcolor | bullist numlist image table hr link | removeformat template code | save';
+
+    CONFIG.TinyMCE.content_css.push('modules/apsj4mej/styles/apsj4mej.css');
+});
+
 Hooks.on('ready', () => {
-    CONFIG.TinyMCE.plugins += ' searchreplace print textpattern template';
-
-    CONFIG.TinyMCE.toolbar +=
-        ' forecolor backcolor fontselect fontsizeselect | template print';
-
-    CONFIG.TinyMCE.visualchars_default_state = true;
-
-    CONFIG.TinyMCE.visualblocks_default_state = true;
-
     CONFIG.TinyMCE.style_formats.push({
         title: 'Stylish Text',
         items: [
@@ -70,19 +71,19 @@ Hooks.on('ready', () => {
             description:
                 'A stylish block for displaying encounter data and descrptions.',
             content:
-                '<section class="block encounter"><header><h1>Encounter!</h1></header><div class="block-contents"><main><h2>Description</h2><p>Enter a detailed description of the environment and scenario here to read to the players.</p><p>Drag Actor tokens from your compendium into the Adversaries list on the right for easy setup of the encounter.</p></main><aside class="red-overlay"><h2>Adversaries</h2><p style="color: #000000; font-family: Scalysans;"></p></aside></section>',
+                '<section class="block encounter"><header><h1>Encounter!</h1></header><div class="block-contents"><main><h2>Description</h2><p>Enter a detailed description of the environment and scenario here to read to the players.</p><p>Drag Actor tokens from your compendium into the Adversaries list on the right for easy setup of the encounter.</p></main><aside class="red-overlay"><h2>Adversaries</h2><p style="color: #000000; font-family: Scalysans; text-shadow: 1px 1px #ffffff"></p></aside></section>',
         },
         {
             title: 'Block: Magic Item',
             description:
                 "A stylish block to display a magic item's description and stats.",
-            content: `<section class="block magic-item"><header><h1>Magic Item Name</h1></header><div class="block-contents"><main><h2>Description</h2><p>Description of the item and its abilities.</p><p>Place Stats in the aside to the right, and a link to the item below the divider.</p></main><aside class="blue-overlay"><h2>Stats</h2><p></p><hr><p style="color: #000000; font-family: Scalysans;"></p></aside></section>`,
+            content: `<section class="block magic-item"><header><h1>Magic Item Name</h1></header><div class="block-contents"><main><h2>Description</h2><p>Description of the item and its abilities.</p><p>Place Stats in the aside to the right, and a link to the item below the divider.</p></main><aside class="blue-overlay"><h2>Stats</h2><p></p><hr><p style="color: #000000; font-family: Scalysans; text-shadow: 1px 1px #ffffff"></p></aside></section>`,
         },
         {
             title: 'Block: Read Aloud',
             description:
                 'A stylish block to denote flavor text to be read aloud to the players.',
-            content: `<section class="block read-aloud"><main><h1>Read Aloud</h1><p>Flavor text to read aloud to the players.</p></main></section>`,
+            content: `<section class="block read-aloud"><main><div class="icon"></div><p>Flavor text to read aloud to the players.</p></main></section>`,
         }
     );
 

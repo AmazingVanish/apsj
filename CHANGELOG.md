@@ -1,5 +1,14 @@
 # RELEASE NOTES
 
+## Version 1.0.0 - Initial Feature Set Complete
+
+-   Tweaked stylings for some elements
+-   Add parchment background
+-   Better organized the toolbar
+-   Organizaed the file structure better for smaller download but more imagery
+-   Added :bug: Bug Report support
+-   Updated Package Manifest+ to comply with the latest standard to work correctly with Module Manager+
+
 ## Version 0.9.6 - Newbie Tweaks
 
 -   Updated the CSS references capitalization of the ScalySans folder. Hopefully this corrects [[Issue #1](https://github.com/AmazingVanish/apsj/issues/1)]

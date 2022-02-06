@@ -1,16 +1,16 @@
 {
     "name": "apsj",
     "title": "Arius Planeswalker's Stylish Journal",
-    "description": "Need to draw attention to important information in your journals? Panels have you covered, from informative to notes to warnings and bonuses. Like the D&D style text? Fake it till you make it with D&D Text Styles you can apply to Headings and body text. No more boring encounter pages. Liven it up with the Encounter Block, complete with Adversary listing! Add some panache to your Magic Item listings and pull out the important stats and item links to a quickly accessible aside. Have a description to read aloud and need a way to differentiate it on the page? Read Aloud Block to the rescue! Stop looking at those boring old pale pages. Add some vibrance and style to your journal entries today!",
+    "description": "Need to draw attention to important information in your journals? Panels have you covered, from informative to notes to warnings and bonuses. Like the D&D style text? Fake it till you make it with D&D Text Styles you can apply to Headings and body text. No more boring encounter pages. Liven it up with the Encounter Block, complete with Adversary listing! Add some panache to your Magic Item listings and pull out the important stats and item links to a quickly accessible aside. Have a description to read aloud and need a way to differentiate it on the page? Read Aloud block to the rescue! Stop looking at those boring old pale pages. Add some vibrance and style to your journal entries today!",
     "version": "This is auto replaced",
     "library": "false",
     "manifestPlusVersion": "1.2.0",
     "minimumCoreVersion": "9",
     "compatibleCoreVersion": 9,
-    "author": "Amaing Vanish",
+    "author": "Vanish",
     "authors": [
         {
-            "name": "Amazing Vanish",
+            "name": "Vanish",
             "url": "https://dscape-llc.com/",
             "email": "chris.vancleve@dscape-llc.com",
             "discord": "vanish#4369",
@@ -18,12 +18,10 @@
         }
     ],
     "dependencies": [],
-    "deprecated": {},
-    "conflicts": [],
     "esmodules": ["scripts/apsj.js"],
     "scripts": [],
     "styles": ["styles/apsj.css"],
-    "includes": ["images", "fonts"],
+    "includes": ["assets", "fonts"],
     "languages": [
         {
             "lang": "en",
@@ -37,17 +35,25 @@
     "media": [
         {
             "type": "screenshot",
-            "url": "https://raw.githubusercontent.com/AmazingVanish/apsj/main/images/StylishJournalEntry.webp",
+            "url": "https://raw.githubusercontent.com/AmazingVanish/apsj/main/images/apsj-ss.webp",
             "caption": "Stylish Journal Entry"
         },
         {
             "type": "cover",
-            "url": "https://raw.githubusercontent.com/AmazingVanish/apsj/main/images/cover.webp",
+            "url": "https://raw.githubusercontent.com/AmazingVanish/apsj/main/images/apsj-cover.webp",
             "caption": "Arius Planeswalker's Stylish Journal"
         }
     ],
     "flags": {
-        "allowBugReporter": true
+        "allowBugReporter": true,
+        "conflicts": [
+            {
+                "name": "apsj4mej",
+                "description": "Shared styles between the two modules. Having both is redundant and may cause issues.",
+                "versionMin": "1.0.0",
+                "versionMax": "1.0.0"
+            }
+        ]
     },
     "license": "https://github.com/AmazingVanish/apsj/blob/main/LICENSE",
     "readme": "https://github.com/AmazingVanish/apsj/blob/main/README.md",
