@@ -1,5 +1,12 @@
 # RELEASE NOTES
 
+## Version 1.1.0 - Tweak The Things
+
+-   Styled Entity Links
+-   Corrected Magic Item background and reference
+-   Tweak box shadows
+-   Use CSS variables throughout
+
 ## Version 1.0.0 - Initial Feature Set Complete
 
 -   Tweaked stylings for some elements

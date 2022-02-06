@@ -1,3 +1,11 @@
+:root {
+    --color-apsj-base-border: rgba(128, 0, 0, 1);
+    --color-apsj-base-background: rgba(128, 0, 0, 0.75);
+    --color-apsj-magic-border: rgba(92, 135, 185, 1);
+    --color-apsj-light-background: rgba(255, 255, 255, 0.75);
+    --color-apsj-dark-background: rgba(64, 64, 64, 0.25);
+}
+
 /*
   D&D Look-alike Fonts
   Credit: https://github.com/jonathonf/solbera-dnd-fonts
@@ -5,86 +13,86 @@
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/BookInsanity/BookInsanity.otf') format('opentype');
-    font-weight: normal;
+    src: url('../fonts/Bookinsanity/BookInsanity.otf') format('opentype');
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/BookInsanity/BookInsanityBold.otf') format('opentype');
-    font-weight: bold;
+    src: url('../fonts/Bookinsanity/BookInsanityBold.otf') format('opentype');
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/BookInsanity/BookInsanityItalic.otf') format('opentype');
-    font-weight: normal;
+    src: url('../fonts/Bookinsanity/BookInsanityItalic.otf') format('opentype');
+    font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/BookInsanity/BookInsanityBoldItalic.otf')
+    src: url('../fonts/Bookinsanity/BookInsanityBoldItalic.otf')
         format('opentype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'MrEaves';
     src: url('../fonts/MrEaves/MrEaves.otf') format('opentype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ScalySans';
     src: url('../fonts/ScalySans/ScalySans.otf') format('opentype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ScalySans';
     src: url('../fonts/ScalySans/ScalySansBold.otf') format('opentype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ScalySans';
     src: url('../fonts/ScalySans/ScalySansItalic.otf') format('opentype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ScalySans';
     src: url('../fonts/ScalySans/ScalySansBoldItalic.otf') format('opentype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ScalySansCaps';
     src: url('../fonts/ScalySans/ScalySansCaps.otf') format('opentype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ScalySansCaps';
     src: url('../fonts/ScalySans/ScalySansCapsBold.otf') format('opentype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ScalySansCaps';
     src: url('../fonts/ScalySans/ScalySansCapsItalic.otf') format('opentype');
-    font-weight: normal;
+    font-weight: 400;
     font-style: italic;
 }
 
@@ -92,11 +100,17 @@
     font-family: 'ScalySansCaps';
     src: url('../fonts/ScalySans/ScalySansCapsBoldItalic.otf')
         format('opentype');
-    font-weight: bold;
+    font-weight: 700;
     font-style: italic;
 }
 
-/* Changes */
+/*
+  Core Style Overrides
+*/
+
+/* .window-app .window-content {
+    background-image: url(../assets/parchment-medium.webp) !important;
+} */
 
 .editable {
     background-image: url(../assets/parchment.webp);
@@ -147,12 +161,42 @@ li > .entity-link {
     line-height: 1.75em;
 }
 
+table thead {
+    background-color: var(--color-apsj-base-border) !important;
+    font-family: 'ScalySansCaps';
+    font-weight: 700;
+    text-shadow: 1px 1px 2px var(--color-shadow-dark);
+}
+
+td {
+    font-family: 'ScalySans';
+    font-weight: 400;
+}
+
+a.entity-link,
+a.content-link,
+a.inline-roll {
+    font-family: 'ScalySans';
+    font-weight: 700;
+    border-radius: 0.35em !important;
+    background: linear-gradient(
+        var(--color-apsj-light-background),
+        var(--color-apsj-dark-background)
+    ) !important;
+}
+
+a.entity-link i,
+a.content-link i,
+a.inline-roll i {
+    text-shadow: 1px 1px 2px var(--color-shadow-dark);
+}
+
 /*
-  Stylish Styles
+  Stylish Text Styles
   */
 
 .dnd-title {
-    font-family: 'Modesto';
+    font-family: 'Modesto Condensed';
     font-weight: 700;
 }
 
@@ -181,21 +225,19 @@ li > .entity-link {
  */
 
 .panel {
-    position: relative;
-    width: 80%;
-    top: 1em;
-    left: 10%;
-    margin: 0;
-    margin-bottom: 0.5em;
+    width: 90%;
+    margin: 1em 5%;
     padding: 6px 8px;
     line-height: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 3px var(--color-shadow-dark);
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px var(--color-shadow-dark);
     color: var(--color-text-light-highlight);
     list-style: none;
 }
 
 .panel::before {
+    position: relative;
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     margin-right: 8px;
@@ -206,12 +248,12 @@ li > .entity-link {
     margin: 0;
     font-family: 'ScalySansCaps';
     font-weight: 400;
-    text-shadow: 1px 1px #000000;
+    text-shadow: 1px 1px 2px var(--color-shadow-dark);
 }
 
 .panel.info {
-    background: rgba(47, 80, 132, 0.6);
-    border: 1px solid #5c87b9;
+    background: rgba(47, 80, 132, 0.75);
+    border: 1px solid var(--color-apsj-magic-border);
 }
 
 .panel.info::before {
@@ -219,7 +261,7 @@ li > .entity-link {
 }
 
 .panel.note {
-    background: rgba(214, 150, 0, 0.6);
+    background: rgba(214, 150, 0, 0.75);
     border: 1px solid #d69e07;
 }
 
@@ -228,7 +270,7 @@ li > .entity-link {
 }
 
 .panel.warning {
-    background: rgba(105, 0, 8, 0.6);
+    background: rgba(105, 0, 8, 0.75);
     border: 1px solid #750003;
 }
 
@@ -237,7 +279,7 @@ li > .entity-link {
 }
 
 .panel.bonus {
-    background: rgba(101, 155, 0, 0.6);
+    background: rgba(101, 155, 0, 0.75);
     border: 1px solid #8ad304;
 }
 
@@ -272,9 +314,9 @@ li > .entity-link {
 }
 
 .block h1 {
-    font-family: 'Modesto';
+    font-family: 'Modesto Condensed';
     font-weight: 700;
-    text-shadow: 1px 1px #666666;
+    text-shadow: 1px 1px 2px var(--color-shadow-dark);
 }
 
 .block h2,
@@ -284,7 +326,7 @@ li > .entity-link {
 .block h6 {
     font-family: 'MrEaves';
     font-weight: 700;
-    text-shadow: 1px 1px #666666;
+    text-shadow: 1px 1px 2px var(--color-shadow-dark);
 }
 
 .block p {
@@ -301,12 +343,12 @@ li > .entity-link {
 }
 
 .block.magic-item {
-    color: #ffffff;
-    border: 2px solid #5c87b9;
+    color: var(--color-text-light-0);
+    border: 2px solid var(--color-apsj-magic-border);
     border-radius: 0.5em;
     background: url('../assets/magic-stars.webp') no-repeat center;
     background-size: cover;
-    box-shadow: 0 0 3px var(--color-shadow-dark);
+    box-shadow: 0 0 5px var(--color-shadow-dark);
 }
 
 .block.magic-item h1,
@@ -316,17 +358,36 @@ li > .entity-link {
 .block.magic-item h5,
 .block.magic-item h6,
 .block.magic-item hr {
-    border-bottom: 2px solid #5c87b9;
+    text-shadow: 1px 1px 2px var(--color-shadow-dark);
+    border-bottom: 2px solid var(--color-apsj-magic-border);
+}
+
+.block.magic-item a.entity-link,
+.block.magic-item a.content-link,
+.block.magic-item a.inline-roll {
+    border: 1px solid var(--color-apsj-magic-border) !important;
+    text-shadow: 1px 1px 2px var(--color-shadow-dark);
+}
+
+.block.magic-item a.entity-link i,
+.block.magic-item a.content-link i,
+.block.magic-item a.inline-roll i {
+    color: var(--color-apsj-light-background) !important;
+    text-shadow: 1px 1px 2px var(--color-shadow-dark);
+}
+
+.block.magic-item a:hover {
+    text-shadow: 0 0 8px var(--color-apsj-magic-border);
 }
 
 .block.read-aloud {
-    border: 2px solid #800000;
+    border: 2px solid var(--color-apsj-base-border);
     border-radius: 0.5em;
     background: linear-gradient(
-        rgba(255, 255, 255, 0.75),
-        rgba(64, 64, 64, 0.25)
+        var(--color-apsj-light-background),
+        var(--color-apsj-dark-background)
     );
-    box-shadow: 0 0 3px var(--color-shadow-dark);
+    box-shadow: 0 0 5px var(--color-shadow-dark);
 }
 
 .icon {
@@ -338,52 +399,43 @@ li > .entity-link {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     font-size: xxx-large;
-    color: #800000;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    color: var(--color-apsj-base-border);
+    text-shadow: 1px 1px 2px var(--color-shadow-dark);
     content: '\f4ad';
 }
 
-.blue-overlay {
-    margin: 0;
-    padding: 10px;
-    background: linear-gradient(rgba(6, 68, 180, 0.75), rgba(0, 40, 103, 0.75));
-    border: 2px solid #5c87b9;
-    border-radius: 0.5em;
-    box-shadow: 0 0 3px var(--color-shadow-dark);
-}
-
-.light-overlay {
-    margin: 0;
-    padding: 10px;
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.75),
-        rgba(64, 64, 64, 0.75)
-    );
-    border: 2px solid #800000;
-    border-radius: 0.5em;
-    box-shadow: 0 0 3px var(--color-shadow-dark);
+.block.read-aloud a.entity-link,
+.block.read-aloud a.content-link,
+.block.read-aloud a.inline-roll {
+    border: 1px solid var(--color-apsj-base-border) !important;
 }
 
 .red-overlay {
     margin: 0;
     padding: 10px;
     background: linear-gradient(rgba(255, 0, 0, 0.75), rgba(124, 0, 0, 0.75));
-    border: 2px solid #800000;
+    border: 2px solid var(--color-apsj-base-border);
     border-radius: 0.5em;
-    box-shadow: 0 0 3px var(--color-shadow-dark);
+    box-shadow: 0 0 5px var(--color-shadow-dark);
 }
 
-/*
-  Table Styles
-*/
-
-table thead {
-    background-color: #800000 !important;
-    font-family: 'ScalySansCaps';
-    font-weight: 700;
+.blue-overlay {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(rgba(6, 68, 180, 0.75), rgba(0, 40, 103, 0.75));
+    border: 2px solid var(--color-apsj-magic-border);
+    border-radius: 0.5em;
+    box-shadow: 0 0 5px var(--color-shadow-dark);
 }
 
-td {
-    font-family: 'ScalySans';
-    font-weight: 400;
+.light-overlay {
+    margin: 0;
+    padding: 10px;
+    background: linear-gradient(
+        var(--color-apsj-light-background),
+        var(--color-apsj-dark-background)
+    );
+    border: 2px solid var(--color-apsj-base-border);
+    border-radius: 0.5em;
+    box-shadow: 0 0 5px var(--color-shadow-dark);
 }
