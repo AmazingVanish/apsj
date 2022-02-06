@@ -35,12 +35,12 @@
     "media": [
         {
             "type": "screenshot",
-            "url": "https://raw.githubusercontent.com/AmazingVanish/apsj/main/images/apsj-ss.webp",
+            "url": "https://raw.githubusercontent.com/AmazingVanish/apsj/main/media/apsj-ss.webp",
             "caption": "Stylish Journal Entry"
         },
         {
             "type": "cover",
-            "url": "https://raw.githubusercontent.com/AmazingVanish/apsj/main/images/apsj-cover.webp",
+            "url": "https://raw.githubusercontent.com/AmazingVanish/apsj/main/media/apsj-cover.webp",
             "caption": "Arius Planeswalker's Stylish Journal"
         }
     ],
