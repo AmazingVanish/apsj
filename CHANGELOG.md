@@ -8,6 +8,7 @@
 -   Fixed more font naming (Thanks SecretSquirrel77 for pointing it out)
 -   Added localization for the settings panel
 -   Modified the names of the Stylish Text to be more in line with standard naming conventions (Thanks weepingminotaur for the idea)
+-   Removed size settings for the Stylish Text to prepare for future changes and consistency
 
 ## Version 1.1.0 - Tweak The Things
 
