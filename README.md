@@ -1,6 +1,6 @@
 # Arius Planeswalker's Stylish Journal
 
-![Version](https://img.shields.io/github/v/tag/AmazingVanish/apsj?label=Version&style=flat-square&color=2577a1) ![Latest Release Download Count](https://img.shields.io/github/downloads/AmazingVanish/apsj/latest/module.zip?label=Downloads&style=flat-square&color=9b43a8) ![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://raw.githubusercontent.com/AmazingVanish/apsj/main/module.json&style=flat-square&color=ff6400) [![Discord Server](https://img.shields.io/badge/-Discord-%232c2f33?style=flat-square&logo=discord)](https://discord.gg/ge9GJXDsM2)
+![All Releases Downloads](https://img.shields.io/github/downloads/AmazingVanish/apsj/total?logo=GitHub) ![Latest Release Downloads](https://img.shields.io/github/downloads/AmazingVanish/apsj/latest/total) ![GitHub Release (latest by date)](https://img.shields.io/github/v/release/AmazingVanish/apsj)![Supported Foundry Versions](https://img.shields.io/endpoint?url=https://foundryshields.com/version?url=https://raw.githubusercontent.com/AmazingVanish/apsj/main/module.json&style=flat-square&color=ff6400) [![Discord Server](https://img.shields.io/badge/-Discord-%232c2f33?style=flat-square&logo=discord)](https://discord.gg/ge9GJXDsM2)
 
 ## Arius Planeswalker Presents Stylish Journal
 
