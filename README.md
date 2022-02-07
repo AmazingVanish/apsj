@@ -37,6 +37,10 @@ _The new toolbar with added options_
 ![mix-n-match](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-mix-n-match.webp)
 _Screenshot of mixing and matching templates for a unique experience_
 
+## Known Issues
+
+-   Font Awesome icons do not display in Edit Mode
+
 ## License
 
 Copyright © 2022 DreamScape Visionery, LLC. All rights reserved.

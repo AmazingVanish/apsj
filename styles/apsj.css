@@ -13,28 +13,28 @@
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/Bookinsanity/BookInsanity.otf') format('opentype');
+    src: url('../fonts/BookInsanity/BookInsanity.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/Bookinsanity/BookInsanityBold.otf') format('opentype');
+    src: url('../fonts/BookInsanity/BookInsanityBold.otf') format('opentype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/Bookinsanity/BookInsanityItalic.otf') format('opentype');
+    src: url('../fonts/BookInsanity/BookInsanityItalic.otf') format('opentype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'BookInsanity';
-    src: url('../fonts/Bookinsanity/BookInsanityBoldItalic.otf')
+    src: url('../fonts/BookInsanity/BookInsanityBoldItalic.otf')
         format('opentype');
     font-weight: 700;
     font-style: italic;

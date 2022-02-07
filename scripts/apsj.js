@@ -36,15 +36,16 @@ Hooks.on('init', () => {
 
 Hooks.on('ready', () => {
     if (game.settings.get('apsj', 'apsjEnableParchment')) {
-        var css =
-                '.journal-sheet form.editable { background-image: url(modules/apsj/assets/parchment.webp); }',
-            head = document.head,
-            style = document.createElement('style');
-
-        head.appendChild(style);
-
-        style.type = 'text/css';
-        style.appendChild(document.createTextNode(css));
+        let innerHTML = '';
+        let style = document.createElement('style');
+        style.id = 'apsj-changes';
+        innerHTML += `
+.journal-sheet form.editable { background-image: url(modules/apsj/assets/parchment.webp); }
+`;
+        style.innerHTML = innerHTML;
+        if (innerHTML != '') {
+            document.querySelector('head').appendChild(style);
+        }
     }
 
     CONFIG.TinyMCE.style_formats.push({
