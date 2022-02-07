@@ -1,39 +1,72 @@
 Hooks.on('init', () => {
+    game.settings.register('apsj', 'apsjEnableParchment', {
+        name: game.i18n.format('APSJ.menuEnableParchmentName'),
+        hint: game.i18n.format('APSJ.menuEnableParchmentHint'),
+        scope: 'client',
+        config: true,
+        default: true,
+        type: Boolean,
+        onChange: () => window.location.reload(),
+    });
+
+    // game.settings.register('apsj', 'apsjTitleSize', {
+    //     name: game.i18n.format('APSJ.menuTitleSizeName'),
+    //     scope: 'world',
+    //     config: true,
+    //     type: Number,
+    //     default: '48',
+    // });
+
+    // game.settings.register('apsj', 'apsjHeadingSize', {
+    //     name: game.i18n.format('APSJ.menuHeadingSizeName'),
+    //     scope: 'world',
+    //     config: true,
+    //     type: Number,
+    //     default: '36',
+    // });
+
     CONFIG.TinyMCE.plugins =
         ' advlist lists searchreplace textpattern template image table hr code save link';
 
     CONFIG.TinyMCE.toolbar =
         'styleselect fontselect fontsizeselect forecolor backcolor | bullist numlist image table hr link | removeformat template code | save';
 
-    CONFIG.TinyMCE.content_css.push('modules/apsj4mej/styles/apsj4mej.css');
+    CONFIG.TinyMCE.content_css.push('modules/apsj/styles/apsj.css');
 });
 
 Hooks.on('ready', () => {
+    if (game.settings.get('apsj', 'apsjEnableParchment')) {
+        var css =
+                '.journal-sheet form.editable { background-image: url(modules/apsj/assets/parchment.webp); }',
+            head = document.head,
+            style = document.createElement('style');
+
+        head.appendChild(style);
+
+        style.type = 'text/css';
+        style.appendChild(document.createTextNode(css));
+    }
+
     CONFIG.TinyMCE.style_formats.push({
         title: 'Stylish Text',
         items: [
             {
-                title: 'D&D Title',
+                title: 'Stylish Heading (Title)',
                 selector: 'h1,h2,h3,h4,h5,h6,th',
                 classes: 'dnd-title',
             },
             {
-                title: 'Adventure Title',
-                selector: 'h1,h2,h3,h4,h5,h6,th',
-                classes: 'adv-title',
-            },
-            {
-                title: 'D&D Heading',
+                title: 'Stylish Heading',
                 selector: 'h1,h2,h3,h4,h5,h6,th',
                 classes: 'dnd-heading',
             },
             {
-                title: 'D&D Data / DM',
+                title: 'Stylish Data',
                 selector: 'h1,h2,h3,h4,h5,h6,th',
                 classes: 'dnd-data',
             },
             {
-                title: 'D&D Text',
+                title: 'Stylish Paragraph',
                 selector: 'p,td',
                 classes: 'dnd-text',
             },
@@ -86,6 +119,4 @@ Hooks.on('ready', () => {
             content: `<section class="block read-aloud"><main><div class="icon"></div><p>Flavor text to read aloud to the players.</p></main></section>`,
         }
     );
-
-    CONFIG.TinyMCE.content_css.push('modules/apsj/styles/apsj.css');
 });

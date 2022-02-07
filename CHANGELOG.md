@@ -1,5 +1,14 @@
 # RELEASE NOTES
 
+## Version 1.2.0 - Parchment Setting
+
+-   Added a setting to enable/disable the parchment background (Thanks KSMI for the request)
+-   Made the panels more vibrant so they stand out more
+-   Removed a leftover from another project. Whooops! (Thanks SecretSquirrel77 for pointing it out)
+-   Fixed more font naming (Thanks SecretSquirrel77 for pointing it out)
+-   Added localization for the settings panel
+-   Modified the names of the Stylish Text to be more in line with standard naming conventions (Thanks weepingminotaur for the idea)
+
 ## Version 1.1.0 - Tweak The Things
 
 -   Styled Entity Links

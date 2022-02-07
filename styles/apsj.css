@@ -1,7 +1,7 @@
 :root {
     --color-apsj-base-border: rgba(128, 0, 0, 1);
     --color-apsj-base-background: rgba(128, 0, 0, 0.75);
-    --color-apsj-magic-border: rgba(92, 135, 185, 1);
+    --color-apsj-magic-border: rgb(92, 135, 185);
     --color-apsj-light-background: rgba(255, 255, 255, 0.75);
     --color-apsj-dark-background: rgba(64, 64, 64, 0.25);
 }
@@ -112,10 +112,6 @@
     background-image: url(../assets/parchment-medium.webp) !important;
 } */
 
-.editable {
-    background-image: url(../assets/parchment.webp);
-}
-
 .editor-content table tbody tr td {
     padding: 0 15px;
 }
@@ -131,30 +127,6 @@
 .editor-content {
     padding-right: 5px;
     overflow-x: hidden;
-}
-
-.editor-content h1 {
-    font-size: xxx-large;
-}
-
-.editor-content h2 {
-    font-size: xx-large;
-}
-
-.editor-content h3 {
-    font-size: x-large;
-}
-
-.editor-content h4 {
-    font-size: large;
-}
-
-.editor-content h5 {
-    font-size: medium;
-}
-
-.editor-content h6 {
-    font-size: small;
 }
 
 li > .entity-link {
@@ -216,7 +188,7 @@ a.inline-roll i {
 }
 
 .dnd-text {
-    font-family: 'Bookinsanity';
+    font-family: 'BookInsanity';
     font-weight: 400;
 }
 
@@ -252,8 +224,8 @@ a.inline-roll i {
 }
 
 .panel.info {
-    background: rgba(47, 80, 132, 0.75);
-    border: 1px solid var(--color-apsj-magic-border);
+    background: rgb(57, 90, 150);
+    border: 2px solid rgb(110, 150, 200);
 }
 
 .panel.info::before {
@@ -261,8 +233,8 @@ a.inline-roll i {
 }
 
 .panel.note {
-    background: rgba(214, 150, 0, 0.75);
-    border: 1px solid #d69e07;
+    background: rgb(214, 150, 0);
+    border: 2px solid #f6be07;
 }
 
 .panel.note::before {
@@ -270,8 +242,8 @@ a.inline-roll i {
 }
 
 .panel.warning {
-    background: rgba(105, 0, 8, 0.75);
-    border: 1px solid #750003;
+    background: rgb(128, 0, 0);
+    border: 2px solid #d00000;
 }
 
 .panel.warning::before {
@@ -279,8 +251,8 @@ a.inline-roll i {
 }
 
 .panel.bonus {
-    background: rgba(101, 155, 0, 0.75);
-    border: 1px solid #8ad304;
+    background: rgb(101, 155, 0);
+    border: 2px solid #8ad304;
 }
 
 .panel.bonus::before {
@@ -330,7 +302,7 @@ a.inline-roll i {
 }
 
 .block p {
-    font-family: 'Bookinsanity';
+    font-family: 'BookInsanity';
     font-weight: 400;
 }
 
