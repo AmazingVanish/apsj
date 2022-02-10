@@ -34,6 +34,15 @@ _Screenshot showing available stylings and templates_
 ![toolbar](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-toolbar.webp)
 _The new toolbar with added options_
 
+![toolbar group: format](https://raw.github.com/AmazingVanish/apsj4mej/master/media/apsj-tbformat.webp)
+_The options under the Format icon_
+
+![toolbar group: format](https://raw.github.com/AmazingVanish/apsj4mej/master/media/apsj-tbpara.webp)
+_The options under the Paragraph icon_
+
+![toolbar group: format](https://raw.github.com/AmazingVanish/apsj4mej/master/media/apsj-tbinsert.webp)
+_The options under the Insert icon_
+
 ![mix-n-match](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-mix-n-match.webp)
 _Screenshot of mixing and matching templates for a unique experience_
 
