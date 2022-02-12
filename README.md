@@ -52,9 +52,6 @@ _The options under the Paragraph icon_
 ![toolbar group: format](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-tbinsert.webp)
 _The options under the Insert icon_
 
-![mix-n-match](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-mix-n-match.webp)
-_Screenshot of mixing and matching templates for a unique experience_
-
 ## Known Issues
 
 -   Font Awesome icons do not display in Edit Mode
