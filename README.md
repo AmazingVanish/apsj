@@ -28,8 +28,17 @@ You can find the new Panels and Blocks under the Templates button.
 
 ## Media
 
-![screenshot](https://raw.githubusercontent.com/AmazingVanish/apsj/main/media/apsj-ss.webp)
-_Screenshot showing available stylings and templates_
+![panels](https://raw.githubusercontent.com/AmazingVanish/apsj/main/media/apsj-panels.webp)
+_The available Panels_
+
+![blocks](https://raw.githubusercontent.com/AmazingVanish/apsj/main/media/apsj-blocks.webp)
+_The available Blocks_
+
+![elements](https://raw.githubusercontent.com/AmazingVanish/apsj/main/media/apsj-elements.webp)
+_The available Elements Stylings_
+
+![mix-n-match](https://raw.githubusercontent.com/AmazingVanish/apsj/main/media/apsj-mix-n-match.webp)
+_An example of Mixing and Matching elements_
 
 ![toolbar](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-toolbar.webp)
 _The new toolbar with added options_
@@ -37,10 +46,10 @@ _The new toolbar with added options_
 ![toolbar group: format](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-tbformat.webp)
 _The options under the Format icon_
 
-![toolbar group: paragraph](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-tbpara.webp)
+![toolbar group: format](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-tbpara.webp)
 _The options under the Paragraph icon_
 
-![toolbar group: insert](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-tbinsert.webp)
+![toolbar group: format](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-tbinsert.webp)
 _The options under the Insert icon_
 
 ![mix-n-match](https://raw.github.com/AmazingVanish/apsj/main/media/apsj-mix-n-match.webp)

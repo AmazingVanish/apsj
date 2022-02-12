@@ -1,6 +1,4 @@
 {
     "APSJ.menuEnableParchmentName": "Enable Parchment",
-    "APSJ.menuEnableParchmentHint": "Replace the default white parchment background with a more aged, brownish look.",
-    "APSJ.menuTitleSizeName": "Choose the default size of your Stylish Titles",
-    "APSJ.menuHeadingSizeName": "Choose the default size of your Stylish Headings"
+    "APSJ.menuEnableParchmentHint": "Replace the default white parchment background with a more aged, brownish look."
 }
