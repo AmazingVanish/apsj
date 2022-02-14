@@ -105,6 +105,12 @@
     --color-apsj-border-primary: rgb(0, 192, 0);
 }
 
+:root.none {
+    --color-apsj-primary: rgb(0, 0, 0);
+    --color-apsj-background-primary: rgba(255, 255, 255, 0);
+    --color-apsj-border-primary: rgb(255, 255, 255);
+}
+
 :root.orange {
     --color-apsj-primary: rgb(192, 128, 0);
     --color-apsj-background-primary: rgba(255, 128, 0, 0.75);
@@ -295,6 +301,111 @@ a.inline-roll i {
 }
 
 /**
+* Monk's Enhanced Journal Overrides
+**/
+
+.monks-journal-sheet .header-name {
+    font-family: var(--font-apsj-modesto);
+}
+
+.monks-journal-sheet.sheet .sheet-header .sheet-image {
+    background: linear-gradient(
+        var(--color-apsj-background-light-4),
+        var(--color-apsj-background-dark-4)
+    ) !important;
+}
+
+.monks-journal-sheet.sheet .items-list .items-header {
+    background: var(--color-apsj-background-primary) !important;
+    color: var(--color-apsj-light-0) !important;
+}
+
+.dnd5e .monks-enhanced-journal .mainbar > div {
+    border-bottom: 1px solid var(--color-apsj-primary) !important;
+}
+
+.dnd5e .monks-enhanced-journal .tab-bar .journal-tab .tab-content {
+    color: var(--color-apsj-dark-0) !important;
+}
+
+.dnd5e .monks-enhanced-journal .tab-bar,
+.monks-enhanced-journal .bookmark-bar,
+.monks-enhanced-journal .directory .directory-header {
+    background: var(--color-apsj-background-primary) !important;
+    color: var(--color-apsj-light-0) !important;
+}
+
+.dnd5e .monks-enhanced-journal .tab-bar .journal-tab {
+    border: 1px solid var(--color-apsj-light-2) !important;
+    background: var(--color-apsj-background-light-3) !important;
+    color: var(--color-apsj-dark-2) !important;
+}
+
+.dnd5e .monks-enhanced-journal .tab-bar .journal-tab:hover {
+    background: var(--color-apsj-background-primary) !important;
+    border: 1px solid var(--color-apsj-primary) !important;
+    color: var(--color-apsj-light-3) !important;
+}
+
+.monks-enhanced-journal .mainbar .navigation {
+    background: var(--color-apsj-background-primary) !important;
+    color: var(--color-apsj-light-0) !important;
+}
+
+.monks-enhanced-journal .mainbar .navigation .nav-button {
+    color: var(--color-apsj-dark-2) !important;
+}
+
+.dnd5e
+    .monks-journal-sheet.sheet
+    .journal-subsheet
+    .items-list
+    .item-controls
+    input,
+.dnd5e .monks-enhanced-journal .sidebar-directory .action-buttons button,
+.monks-enhanced-journal .bookmark-bar .bookmark-button,
+.dnd5e .monks-enhanced-journal .tab-bar .journal-tab.active {
+    border: 1px solid var(--color-apsj-light-0) !important;
+    background: var(--color-apsj-background-light-0) !important;
+    color: var(--color-apsj-dark-2) !important;
+}
+
+.monks-enhanced-journal .mainbar .navigation .nav-button:hover,
+.monks-enhanced-journal .bookmark-bar .bookmark-button:hover,
+.dnd5e
+    .monks-journal-sheet.sheet
+    .journal-subsheet
+    .items-list
+    .item-controls
+    input:hover,
+.dnd5e .monks-enhanced-journal .sidebar-directory .action-buttons button:hover,
+.dnd5e .monks-enhanced-journal .tab-bar .journal-tab.active:hover,
+.dnd5e .monks-journal-sheet .journal-subsheet .encounter-buttons > div:hover {
+    color: var(--color-apsj-light-3) !important;
+    background: var(--color-apsj-border-primary) !important;
+    border: 1px solid var(--color-apsj-light-3) !important;
+}
+
+.dnd5e .monks-enhanced-journal .mainbar .navigation .nav-input {
+    border: 1px solid var(--color-apsj-light-0) !important;
+    background: var(--color-apsj-background-light-0) !important;
+    color: var(--color-apsj-dark) !important;
+}
+
+.dnd5e #journal-directory li.journalentry {
+    border-top: 1px solid var(--color-apsj-border-primary) !important;
+    border-bottom: 1px solid var(--color-apsj-primary) !important;
+    color: var(--color-apsj-dark) !important;
+}
+
+.dnd5e #journal-directory li.journalentry:hover {
+    background: var(--color-apsj-background-primary) !important;
+    border-top: 1px solid var(--color-apsj-light-3) !important;
+    border-bottom: 1px solid var(--color-apsj-light-3) !important;
+    color: var(--color-apsj-light-3) !important;
+}
+
+/**
 * Stylish Text Styles
 **/
 
@@ -310,10 +421,20 @@ a.inline-roll i {
     font-size: 24pt !important;
 }
 
+.black-border {
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
 .dnd-data {
     font-family: var(--font-apsj-scalysans) !important;
     font-weight: 700 !important;
     font-size: 10pt !important;
+}
+
+.dnd-data-heading {
+    font-family: var(--font-apsj-scalycaps) !important;
+    font-weight: 700 !important;
+    font-size: 18pt !important;
 }
 
 .dnd-panel-heading {
