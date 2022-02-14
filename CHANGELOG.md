@@ -1,6 +1,20 @@
 # RELEASE NOTES
 
-## 1.5.0
+## 1.6.0 - Translastions
+
+### ADDED
+
+- French translation
+- German translation
+- Spanish translation
+- Data HEading text style
+
+### CHANGED
+
+- English translation supdated
+- MOAR Translated phrases. Everything shoud be i18n now.
+
+## 1.5.0 - Parity with APSJ4MEJ
 
 ### ADDED
 
