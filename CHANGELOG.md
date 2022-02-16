@@ -1,5 +1,10 @@
 # RELEASE NOTES
 
+## 1.6.1 - Oranges
+
+- Fix the primary orange color
+- Fix Players not seeing the parchment background when not a journal sheet owner
+
 ## 1.6.0 - Translastions
 
 ### ADDED

@@ -47,7 +47,7 @@ Hooks.on('ready', () => {
         let style = document.createElement('style');
         style.id = 'apsj-changes';
         innerHTML += `
-.journal-sheet form.editable { background-image: url(modules/apsj/assets/parchment.webp); }
+.journal-sheet form.editable, .journal-sheet form.locked { background-image: url(modules/apsj/assets/parchment.webp); }
 `;
         style.innerHTML = innerHTML;
         if (innerHTML != '') {

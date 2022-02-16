@@ -112,7 +112,7 @@
 }
 
 :root.orange {
-    --color-apsj-primary: rgb(192, 128, 0);
+    --color-apsj-primary: rgb(255, 128, 0);
     --color-apsj-background-primary: rgba(255, 128, 0, 0.75);
     --color-apsj-border-primary: rgb(255, 160, 0);
 }
